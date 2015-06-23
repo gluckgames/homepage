@@ -104,13 +104,13 @@ gulp.task("clean", function() {
     return gulp.src("dist", {read: false}).pipe(clean());
 });
 
-gulp.task("deploy", ["clean", "build"], function () {
+gulp.task("deploy", ["build"], function () {
     return gulp.src("./dist/**", {read: false})
     .pipe(cloudfiles({
         "username": process.env.RAX_USERNAME,
         "apiKey": process.env.RAX_API_KEY,
         "region": process.env.RAX_REGION,
-        "container": "gamevy-dot-com"
+        "container": "gamevy-dot-com-test"
     }, {}));
 });
 
