@@ -10,6 +10,9 @@ strong {
   color: @brand-primary;
 }
 
+.section-with-top {
+  margin-top: 70px;
+}
 
 .wrapper {
   position: relative;
@@ -92,6 +95,7 @@ strong {
     content: "";
   }
 }
+
 @media(min-width: @grid-float-breakpoint) {
   .hero {
     padding: 150px+@navbar-height 0 150px;
@@ -318,7 +322,6 @@ strong {
 }
 
 .section.section-results {
-
   font-size: 1.2em;
   border-bottom: none;
   .icon {
@@ -330,8 +333,6 @@ strong {
       top: -30px;
     }
     ul.lotto-balls {
-
-
       li {
         position: absolute;
         font-size: 0.2em;
@@ -341,7 +342,12 @@ strong {
 
   ul.benefits {
     margin-top: 0px;
+  }
 
+  h1 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: @gray-base;
   }
 }
 
@@ -646,6 +652,7 @@ strong {
 
 .section-games {
   background-color: #000;
+  /*background-image: url("img/metal.jpg");*/
   color: #ddd;
   .item {
     margin-top: 60px;
@@ -883,31 +890,10 @@ footer {
   }
 }
 
-
-/**
- * Preview (not necessary for production sites)
- */
-
-.preview__content {
-  padding-top: 80px;
-  padding-bottom: 60px;
-
-  .portfolio__item {
-    margin-bottom: 20px;
+.section-terms-and-conditions {
+  iframe {
+    width: 500px;
+    height: 500px;
+    border: none;
   }
-  .portfolio-item__img {
-    box-shadow: 0 1px 2px fade(black,30%);
-  }
-}
-.portfolio-item__title {
-  padding-top: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-align: center;
-}
-.preview__footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  color: @gray-light;
-  text-align: center;
 }

@@ -14,6 +14,8 @@ var htmlhint = require("gulp-htmlhint");
 var path = require("path");
 var sourcemaps = require("gulp-sourcemaps");
 var cloudfiles = require("gulp-cloudfiles");
+var fileinclude = require("gulp-file-include");
+var clean = require("gulp-clean");
 
 gulp.task("server", function() {
     browserSync.init({
@@ -69,11 +71,14 @@ gulp.task("less", function() {
     .pipe(sourcemaps.write())
     .pipe(gulp.dest("./dist"))
     .pipe(browserSync.stream());
-
 });
 
 gulp.task("html", function () {
-    gulp.src("index.html")
+    return gulp.src("*.html")
+    .pipe(fileinclude({
+      prefix: "@@",
+      basepath: "@file"
+    }))
     .pipe(htmlhint())
     //.pipe(htmlhint.failReporter())
     .on("error", notify.onError(function(err) {
@@ -89,22 +94,32 @@ gulp.task("img", function () {
     .pipe(browserSync.stream());
 });
 
-gulp.task("build", [ "less", "js", "html", "img"]);
+gulp.task("download", function () {
+    gulp.src("download/*")
+    .pipe(gulp.dest("dist/download/"))
+    .pipe(browserSync.stream());
+});
+
+gulp.task("clean", function() {
+    return gulp.src("dist", {read: false}).pipe(clean());
+});
+
+gulp.task("deploy", ["clean", "build"], function () {
+    return gulp.src("./dist/**", {read: false})
+    .pipe(cloudfiles({
+        "username": process.env.RAX_USERNAME,
+        "apiKey": process.env.RAX_API_KEY,
+        "region": process.env.RAX_REGION,
+        "container": "gamevy-dot-com"
+    }, {}));
+});
 
 gulp.task("watch", ["build", "js:watch"], function () {
-    gulp.watch("index.html", ["html"]);
+    gulp.watch(["*.html", "partials/*.html"], ["html"]);
     gulp.watch("img/**", ["img"]);
+    gulp.watch("download/**", ["download"]);
     gulp.watch("less/**", ["less"]);
 });
 
-gulp.task("deploy", function () {
-    return gulp.src("./dist/**", {read: false})
-        .pipe(cloudfiles({
-            "username": process.env.RAX_USERNAME,
-            "apiKey": process.env.RAX_API_KEY,
-            "region": process.env.RAX_REGION,
-            "container": "gamevy-dot-com"
-        }, {}));
-});
-
+gulp.task("build", [ "less", "js", "html", "img", "download"]);
 gulp.task("default", ["build", "server", "watch"]);
