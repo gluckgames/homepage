@@ -1,0 +1,63 @@
+html, body {
+  height: 100% !important;
+}
+strong {
+  color: @brand-primary;
+}
+
+.section-with-top {
+  margin-top: 70px;
+}
+
+.wrapper {
+  position: relative;
+  background: white;
+}
+.heading, .heading__sub {
+  text-align: center;
+}
+.heading {
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.heading + .heading__sub {
+  margin-top: -40px;
+  margin-bottom: 80px;
+  color: @gray-light;
+}
+.heading__sub + .heading__btn {
+  margin-top: -40px;
+  margin-bottom: 40px;
+}
+.heading_left {
+  text-align: left;
+}
+.heading_left + .heading__sub {
+  text-align: left;
+}
+.section {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #eee;
+}
+.section_alt {
+  background: #f5f5f5;
+}
+
+.row-same-height {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+@media (min-width: 768px) {
+  .col-sm-height {
+    display: table-cell;
+    float: none !important;
+  }
+}
+.col-middle {
+  vertical-align: middle;
+}

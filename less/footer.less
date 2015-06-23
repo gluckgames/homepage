@@ -1,0 +1,48 @@
+footer {
+  margin-top: 40px;
+  padding: 40px 0;
+  background-color: #eee;
+  color: @gray-light;
+  line-height: 30px;
+  text-align: center;
+
+  a {
+    color: @gray-light;
+  }
+}
+.footer__social {
+  margin-top: 20px;
+}
+.footer-social__link {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: @border-radius-small;
+  background-color: #bbb;
+  text-align: center;
+  color: #eee;
+  .transition(all .15s);
+
+  &:hover, &:focus {
+    color: white;
+  }
+}
+.footer-social__link_twitter:hover {
+  background-color: @twitter-color;
+}
+.footer-social__link_facebook:hover {
+  background-color: @facebook-color;
+}
+.footer-social__link_google-plus:hover {
+  background-color: @google-plus-color;
+}
+
+@media(min-width: @screen-sm-min) {
+  footer {
+    text-align: left;
+  }
+  .footer__social {
+    margin-top: 0;
+    text-align: right;
+  }
+}
