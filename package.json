@@ -1,0 +1,39 @@
+{
+  "name": "gamevy-homepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gamevy/homepage.git"
+  },
+  "author": "Marek Ventur <marek@gamevy.com>",
+  "bugs": {
+    "url": "https://github.com/Gamevy/homepage/issues"
+  },
+  "homepage": "http://gamevy.com",
+  "devDependencies": {
+    "babelify": "~6.1.2",
+    "bootstrap": "^3.3.5",
+    "browser-sync": "^2.7.12",
+    "browserify": "^10.2.4",
+    "font-awesome-stylus": "^4.3.0",
+    "gulp": "^3.9.0",
+    "gulp-cloudfiles": "^0.1.3",
+    "gulp-concat": "^2.5.2",
+    "gulp-copy": "0.0.2",
+    "gulp-htmlhint": "^0.1.1",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-less": "^3.0.3",
+    "gulp-notify": "^2.2.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-util": "^3.0.5",
+    "jquery": "^2.1.4",
+    "nib": "^1.1.0",
+    "vinyl-source-stream": "~1.1.0",
+    "watchify": "^3.2.2"
+  }
+}
