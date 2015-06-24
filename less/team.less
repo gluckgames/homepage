@@ -1,55 +1,37 @@
-.team__item {
-  margin-bottom: 40px;
-}
-.team-item__img {
-  margin-bottom: 20px;
-  overflow: hidden;
+.section-team {
+  .member {
+    margin-bottom: 40px;
 
-  > img {
-    border-radius: @border-radius-small;
-    .transition-transform(.7s);
-  }
-}
-@media(min-width: @screen-sm-min) {
-  .team__item:hover .team-item__img > img {
-    -webkit-transform: rotate(-5deg) scale(1.1, 1.1);
-        -ms-transform: rotate(-5deg) scale(1.1, 1.1);
-            transform: rotate(-5deg) scale(1.1, 1.1);
-  }
-}
-.team-item-contact__link {
-  display: block;
-  float: left;
-  width: 50%;
-  margin-top: @line-height-computed*0.2;
-  margin-bottom: @line-height-computed*0.2;
-  border-radius: @border-radius-small 0 0 @border-radius-small;
-  text-align: center;
-  line-height: @line-height-computed*1.6;
-  background-color: #eee;
-  color: @text-color;
-  text-decoration: none;
-  .transition(all .15s);
+    .image {
+      margin-bottom: 20px;
+      overflow: hidden;
 
-  &:hover, &:focus {
-    background: @twitter-color;
-    color: white;
-  }
-}
-.team-item-contact__link_facebook {
-  border-left: 1px solid white;
-  border-radius: 0 @border-radius-small @border-radius-small 0;
+      > img {
+        border-radius: @border-radius-small;
+        .transition-transform(.7s);
 
-  &:hover, &:focus {
-    background: @facebook-color;
+        &:hover {
+          @media(min-width: @screen-sm-min) {
+            -webkit-transform: rotate(-5deg) scale(1.1, 1.1);
+                -ms-transform: rotate(-5deg) scale(1.1, 1.1);
+                    transform: rotate(-5deg) scale(1.1, 1.1);
+          }
+        }
+      }
+    }
+
+    .info {
+      .name {
+        font-weight: 700;
+      }
+      .position {
+        margin-bottom: 10px;
+        color: @gray-light;
+      }
+    }
   }
 }
-.team-item__name {
-  font-weight: 700;
-}
-.team-item__position {
-  margin-bottom: 10px;
-  color: @gray-light;
-}
+
+
 
 
