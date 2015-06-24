@@ -13,7 +13,6 @@ var notify = require("gulp-notify");
 var htmlhint = require("gulp-htmlhint");
 var path = require("path");
 var sourcemaps = require("gulp-sourcemaps");
-var cloudfiles = require("gulp-cloudfiles");
 var fileinclude = require("gulp-file-include");
 var clean = require("gulp-clean");
 
@@ -104,16 +103,6 @@ gulp.task("clean", function() {
     return gulp.src("dist", {read: false}).pipe(clean());
 });
 
-gulp.task("deploy", ["build"], function () {
-    return gulp.src("./dist/**", {read: false})
-    .pipe(cloudfiles({
-        "username": process.env.RAX_USERNAME,
-        "apiKey": process.env.RAX_API_KEY,
-        "region": process.env.RAX_REGION,
-        "container": "gamevy-dot-com-test"
-    }, {}));
-});
-
 gulp.task("watch", ["build", "js:watch"], function () {
     gulp.watch(["*.html", "partials/*.html"], ["html"]);
     gulp.watch("img/**", ["img"]);
@@ -122,4 +111,5 @@ gulp.task("watch", ["build", "js:watch"], function () {
 });
 
 gulp.task("build", [ "less", "js", "html", "img", "download"]);
+gulp.task("jenkins", [ "build"]);
 gulp.task("default", ["build", "server", "watch"]);
