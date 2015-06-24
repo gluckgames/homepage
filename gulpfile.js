@@ -100,6 +100,13 @@ gulp.task("download", function () {
     .pipe(browserSync.stream());
 });
 
+gulp.task("favicon", function () {
+    gulp.src("favicon/*")
+    .pipe(gulp.dest("dist/favicon/"))
+    .pipe(browserSync.stream());
+});
+
+
 gulp.task("clean", function (cb) {
   del([ "dist/**/*" ], cb);
 });
@@ -111,7 +118,7 @@ gulp.task("watch", ["build", "js:watch"], function () {
     gulp.watch("less/**", ["less"]);
 });
 
-gulp.task("build", [ "less", "js", "html", "img", "download"]);
+gulp.task("build", [ "less", "js", "html", "img", "download", "favicon"]);
 gulp.task("jenkins", function(cb) {
     runSequence("clean", "build", cb);
 });
