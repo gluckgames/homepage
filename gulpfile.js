@@ -14,7 +14,8 @@ var htmlhint = require("gulp-htmlhint");
 var path = require("path");
 var sourcemaps = require("gulp-sourcemaps");
 var fileinclude = require("gulp-file-include");
-var clean = require("gulp-clean");
+var runSequence = require("run-sequence");
+var del = require("del");
 
 gulp.task("server", function() {
     browserSync.init({
@@ -99,8 +100,8 @@ gulp.task("download", function () {
     .pipe(browserSync.stream());
 });
 
-gulp.task("clean", function() {
-    return gulp.src("dist", {read: false}).pipe(clean());
+gulp.task("clean", function (cb) {
+  del([ "dist/**/*" ], cb);
 });
 
 gulp.task("watch", ["build", "js:watch"], function () {
@@ -111,5 +112,7 @@ gulp.task("watch", ["build", "js:watch"], function () {
 });
 
 gulp.task("build", [ "less", "js", "html", "img", "download"]);
-gulp.task("jenkins", [ "build"]);
+gulp.task("jenkins", function(cb) {
+    runSequence("clean", "build", cb);
+});
 gulp.task("default", ["build", "server", "watch"]);
