@@ -16,6 +16,8 @@ var sourcemaps = require("gulp-sourcemaps");
 var fileinclude = require("gulp-file-include");
 var runSequence = require("run-sequence");
 var del = require("del");
+var githubPages = require("gulp-gh-pages");
+var fs = require("fs");
 
 gulp.task("server", function() {
     browserSync.init({
@@ -53,11 +55,12 @@ gulp.task("js", function() {
 gulp.task("js:watch", function() {
     var b = watchify(createMainBrowserify());
     b.on("log", gutil.log);
-    bundleMainBrowserify(b); // run build when watch is started
+    var result = bundleMainBrowserify(b); // run build when watch is started
     b.on("update", function() {
         bundleMainBrowserify(b)
         .pipe(browserSync.stream());
     });
+    return result;
 });
 
 gulp.task("less", function() {
@@ -89,19 +92,19 @@ gulp.task("html", function () {
 });
 
 gulp.task("img", function () {
-    gulp.src(["img/*.png", "img/*.jpg"])
+    return gulp.src(["img/*.png", "img/*.jpg"])
     .pipe(gulp.dest("dist/img/"))
     .pipe(browserSync.stream());
 });
 
 gulp.task("download", function () {
-    gulp.src("download/*")
+    return gulp.src("download/*")
     .pipe(gulp.dest("dist/download/"))
     .pipe(browserSync.stream());
 });
 
 gulp.task("favicon", function () {
-    gulp.src("favicon/*")
+    return gulp.src("favicon/*")
     .pipe(gulp.dest("dist/favicon/"))
     .pipe(browserSync.stream());
 });
@@ -119,7 +122,17 @@ gulp.task("watch", ["build", "js:watch"], function () {
 });
 
 gulp.task("build", [ "less", "js", "html", "img", "download", "favicon"]);
+
+gulp.task("deploy", function () {
+    fs.writeFileSync("./dist/CNAME", "gamevy.com");
+    return gulp.src("./dist/**/*")
+    .pipe(githubPages({
+        remoteUrl: "git@github.com:Gamevy/gamevy.github.io.git",
+        branch: "master"
+    }));
+});
+
 gulp.task("jenkins", function(cb) {
-    runSequence("clean", "build", cb);
+    runSequence("clean", "build", "deploy", cb);
 });
 gulp.task("default", ["build", "server", "watch"]);
