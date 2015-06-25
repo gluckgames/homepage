@@ -1,34 +1,106 @@
+.vendor(@property, @value) {
+    -webkit-@{property}: @value;
+     -khtml-@{property}: @value;
+       -moz-@{property}: @value;
+        -ms-@{property}: @value;
+            @{property}: @value;
+}
+
 .section-team {
   .member {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    text-align: center;
 
-    .image {
-      margin-bottom: 20px;
-      overflow: hidden;
-
-      > img {
-        border-radius: @border-radius-small;
-        .transition-transform(.7s);
-
-        &:hover {
-          @media(min-width: @screen-sm-min) {
-            -webkit-transform: rotate(-5deg) scale(1.1, 1.1);
-                -ms-transform: rotate(-5deg) scale(1.1, 1.1);
-                    transform: rotate(-5deg) scale(1.1, 1.1);
+    &:hover {
+      .card {
+        .front {
+          .info {
+            opacity: 0;
           }
+        }
+        .back {
+          opacity: 1;
         }
       }
     }
 
-    .info {
-      .name {
-        font-weight: 700;
+    .card {
+      position: relative;
+      display: inline-block;
+
+      .front, .back {
+        border-radius: @border-radius-small;
+        text-align: left;
+        .vendor(transition, 0.3s);
       }
-      .position {
-        margin-bottom: 10px;
-        color: @gray-light;
+
+      .front {
+        > img {
+          border-radius: @border-radius-small;
+        }
+
+        .info {
+          color: #fff;
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+          padding: 0px 10px;
+          background-color: rgba(255, 255, 255, 0.5);
+          border-bottom-left-radius: @border-radius-small;
+          border-bottom-right-radius: @border-radius-small;
+        }
+      }
+
+      .back {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        color: #fff;
+        overflow-x: auto;
+        overflow-y: auto;
+        opacity: 0;
+
+        .name {
+          font-weight: 700;
+        }
+        .position {
+          color: @gray-light;
+        }
       }
     }
+
+    &.member-founders {
+      .front .info {
+        background-color: rgba(166, 49, 75, 0.5);
+      }
+      .back {
+        background-color: rgba(166, 49, 75, 0.8);
+      }
+    }
+
+    &.member-creative {
+      .front .info {
+        background-color: rgba(36, 18, 112, 0.5);
+      }
+      .back {
+        background-color: rgba(36, 18, 112, 0.8);
+      }
+    }
+
+    &.member-development {
+      .front .info {
+        background-color: rgba(23, 121, 41, 0.5);
+      }
+      .back {
+        background-color: rgba(23, 121, 41, 0.8);
+      }
+    }
+
   }
 }
 
