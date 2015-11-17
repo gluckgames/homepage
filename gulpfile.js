@@ -109,19 +109,23 @@ gulp.task("favicon", function () {
     .pipe(browserSync.stream());
 });
 
+gulp.task("games", function() {
+    require("./games.js")();
+});
 
 gulp.task("clean", function (cb) {
   del([ "dist/**/*" ], cb);
 });
 
 gulp.task("watch", ["build", "js:watch"], function () {
-    gulp.watch(["*.html", "partials/*.html"], ["html"]);
+    gulp.watch(["*.html", "partials/*.html"], ["html", "games"]);
     gulp.watch("img/**", ["img"]);
     gulp.watch("download/**", ["download"]);
     gulp.watch("less/**", ["less"]);
+    gulp.watch("games.js", ["games"]);
 });
 
-gulp.task("build", [ "less", "js", "html", "img", "download", "favicon"]);
+gulp.task("build", [ "less", "js", "html", "img", "download", "favicon", "games"]);
 
 gulp.task("deploy", function () {
     fs.writeFileSync("./dist/CNAME", "gamevy.com");
