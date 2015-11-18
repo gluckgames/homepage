@@ -4,7 +4,10 @@ var GAMES = [
         "url": "https://70234542b69db413cdd4-ec3382d217bd165415e45cc0dc163fa1.ssl.cf3.rackcdn.com",
         "languages": {
             "en-GB": "The Heist",
-            "de-DE": "Der Tresor"
+            "de-DE": "Der Tresor",
+            "pl-PL": "Włambank",
+            "sv-SE": "Kuppen",
+            "ru-RU": "Грабитель"
         }
     },
     {
@@ -12,7 +15,9 @@ var GAMES = [
         "url": "https://cb0ae37100c1554702d9-f0d4393fe19cd1569847c666aa639f95.ssl.cf3.rackcdn.com",
         "languages": {
             "en-GB": "Gears of Fortune",
-            "de-DE": "Glückszahnrad"
+            "de-DE": "Glückszahnrad",
+            "pl-PL": "Maszyna Fortuny",
+            "ru-RU": "Знаки Фортуны"
         }
     },
     {
@@ -20,21 +25,47 @@ var GAMES = [
         "url": "https://38050b8429872a8d3654-52cd88461befb180e6ba6df9d51f2d49.ssl.cf3.rackcdn.com",
         "languages": {
             "en-GB": "Buzzword Bingo",
-            "de-DE": "Wortbingo"
+            "de-DE": "Wortbingo",
+            "pl-PL": "Gra słów"
         }
     }
 ];
 
 var LANGUAGES = {
-    "en-GB" : {
+    "en-GB": {
         "prefix": "",
         "currency": "GBP",
         "fullscreen": "Play in full screen"
     },
-    "de-DE" : {
+    "de-DE": {
         "prefix": "-de-DE",
         "currency": "EUR",
         "fullscreen": "Spiele in Vollbild"
+    },
+    "pl-PL": {
+        "prefix": "-pl-PL",
+        "currency": "PLN",
+        "fullscreen": "na pełnym ekranie"
+    },
+    "sv-SE": {
+        "prefix": "-sv-SE",
+        "currency": "SEK",
+        "fullscreen": "Spela i helskärmsläge"
+    },
+    "cs-CZ": {
+        "prefix": "-cs-CZ",
+        "currency": "CZK",
+        "fullscreen": "Hrej na celé obrazovce"
+    },
+    "pt-BR": {
+        "prefix": "-pt-BR",
+        "currency": "BRL",
+        "fullscreen": "Jogar em tela cheia"
+    },
+    "ru-RU": {
+        "prefix": "-ru-RU",
+        "currency": "RUB",
+        "fullscreen": "играть во весь экран"
     }
 };
 
