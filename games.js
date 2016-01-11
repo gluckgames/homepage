@@ -31,6 +31,14 @@ var GAMES = [
             "de-DE": "Wortbingo",
             "pl-PL": "Gra słów"
         }
+    },
+    {
+        "path": "boss-the-lotto",
+        "url": "https://e8712e7c7a6a1f5996ff-b56156305062b1fa52cb797a5a0bf8a9.ssl.cf3.rackcdn.com", // Master
+        "version": 1,
+        "languages": {
+            "en-GB": "Boss the Lotto"
+        }
     }
 ];
 
