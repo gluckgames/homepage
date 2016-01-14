@@ -34,7 +34,7 @@ var GAMES = [
     },
     {
         "path": "boss-the-lotto",
-        "url": "https://e8712e7c7a6a1f5996ff-b56156305062b1fa52cb797a5a0bf8a9.ssl.cf3.rackcdn.com", // Master
+        "url": "https://942ee359b38c739ec703-e7b4a4a9cfc3068a977f0739a8065678.ssl.cf3.rackcdn.com",
         "version": 1,
         "languages": {
             "en-GB": "Boss the Lotto"
