@@ -37,7 +37,8 @@ var GAMES = [
         "url": "https://942ee359b38c739ec703-e7b4a4a9cfc3068a977f0739a8065678.ssl.cf3.rackcdn.com",
         "version": 1,
         "languages": {
-            "en-GB": "Boss the Lotto"
+            "en-GB": "Boss the Lotto",
+            "de-DE": "Lottoboss"
         }
     }
 ];
