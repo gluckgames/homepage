@@ -1,12 +1,11 @@
 .section-games {
   background-color: #000;
-  background-image: url("img/gof_bg.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: #ddd;
   .item {
-    margin-top: 80px;
-    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 0px;
 
     .heading {
       color: @gray-light;
@@ -21,10 +20,53 @@
     font-size: 2.5em;
     margin-top: 60px;
     margin-bottom: 80px;
-    .icon {
-      height: 2em;
-      color: @brand-primary;
-      margin-right: 30px;
+    color: #fff;
+
+    @media (max-width: 768px) {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 0px;
     }
   }
+
+  .game-logo {
+    width: 100%;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .col-game {
+    margin-bottom: 50px;
+  }
+
+  .game-logo--the-heist {
+    background-image: ;
+  }
+  .game-logo--boss-the-lotto {
+    background-image: url("/img/game_boss_the_lotto.png");
+  }
+  .game-logo--gears-of-fortune {
+    background-image: url("/img/game_gears_of_fortune.png");
+  }
+  .game-logo--buzzword {
+    background-image: url("/img/game_buzzword.png");
+  }
+  .game-logo--diamomd {
+    background-image: url("/img/game_buzzword.png");
+  }
+
+  .btn-primary {
+    margin-top: 20px;
+  }
+
+  .btn-invisible {
+    visibility: hidden;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
 }
