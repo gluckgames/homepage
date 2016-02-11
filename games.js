@@ -40,6 +40,14 @@ var GAMES = [
             "en-GB": "Boss the Lotto",
             "de-DE": "Lottoboss"
         }
+    },
+    {
+        "path": "boss-the-ball",
+        "url": "https://12139ec25694b8ee0c5a-9bef4630b3d43ea6b4b821b024198164.ssl.cf3.rackcdn.com",
+        "version": 1,
+        "languages": {
+            "en-GB": "Boss the Ball"
+        }
     }
 ];
 
