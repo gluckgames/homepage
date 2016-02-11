@@ -48,6 +48,15 @@ var GAMES = [
         "languages": {
             "en-GB": "Boss the Ball"
         }
+    },
+    {
+        "path": "diamond-deal",
+        "url": "https://74926736e21dc1cdb6de-44165718bd41782521e59ee38cd99a6d.ssl.cf3.rackcdn.com",
+        "version": 1,
+        "languages": {
+            "en-GB": "Diamond Deal",
+            "pl-PL": "Diamentowe Łowy"
+        }
     }
 ];
 
