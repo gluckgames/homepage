@@ -64,37 +64,44 @@ var LANGUAGES = {
     "en-GB": {
         "prefix": "",
         "currency": "GBP",
-        "fullscreen": "Play in full screen"
+        "fullscreen": "Play in full screen",
+        "name": "English"
     },
     "de-DE": {
         "prefix": "-de-DE",
         "currency": "EUR",
-        "fullscreen": "Spiele in Vollbild"
+        "fullscreen": "Spiele in Vollbild",
+        "name": "German"
     },
     "pl-PL": {
         "prefix": "-pl-PL",
         "currency": "PLN",
-        "fullscreen": "na pełnym ekranie"
+        "fullscreen": "na pełnym ekranie",
+        "name": "Polish"
     },
     "sv-SE": {
         "prefix": "-sv-SE",
         "currency": "SEK",
-        "fullscreen": "Spela i helskärmsläge"
+        "fullscreen": "Spela i helskärmsläge",
+        "name": "Swedish"
     },
     "cs-CZ": {
         "prefix": "-cs-CZ",
         "currency": "CZK",
-        "fullscreen": "Hrej na celé obrazovce"
+        "fullscreen": "Hrej na celé obrazovce",
+        "name": "Czech"
     },
     "pt-BR": {
         "prefix": "-pt-BR",
         "currency": "BRL",
-        "fullscreen": "Jogar em tela cheia"
+        "fullscreen": "Jogar em tela cheia",
+        "name": "Portugese"
     },
     "ru-RU": {
         "prefix": "-ru-RU",
         "currency": "RUB",
-        "fullscreen": "играть во весь экран"
+        "fullscreen": "играть во весь экран",
+        "name": "Russian"
     }
 };
 
@@ -122,6 +129,7 @@ module.exports = function() {
                 .replace(new RegExp("{{name}}", "g"), name)
                 .replace(new RegExp("{{fullscreen}}", "g"), language.fullscreen)
                 .replace(new RegExp("{{version}}", "g"), game.version)
+                .replace(new RegExp("{{languageSwitch}}", "g"), getLanguageSwitch(game.languages, languageCode, game.path))
 
                 // Remove navbar-fixed, it creates problems on small screens
                 .replace("navbar-fixed-top js-navbar-top", "");
@@ -131,4 +139,21 @@ module.exports = function() {
             fs.writeFileSync(filename, data, "utf8");
         });
     });
+}
+
+function getLanguageSwitch(supported, currentLanguageCode, path) {
+    if (supported.length === 1) {
+        return;
+    }
+
+    return _.map(supported, function(name, languageCode) {
+        var name = LANGUAGES[languageCode].name;
+        var url = "/" + path + LANGUAGES[languageCode].prefix + ".html";
+
+        if (languageCode === currentLanguageCode) {
+            return "<li class=\"disabled\"><a href=\"" + url + "\">" + name + "</a></li>";
+        } else {
+            return "<li><a href=\"" + url + "\">" + name + "</a></li>";
+        }
+    }).join("");
 }

@@ -1,9 +1,33 @@
+
 <div class="section">
-  <div class="container">
+  <div class="container game">
+
+    <div class="row">
+      <div class="col-sm-4">
+        <h1>{{name}}</h1>
+      </div>
+      <div class="col-sm-8 game-languages-wide hidden-xs ">
+        <ul class="text-right">
+          {{languageSwitch}}
+        </ul>
+      </div>
+
+      <div class="col-sm-8 game-languages-narrow visible-xs-block text-right">
+
+        <div class="dropdown">
+          <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="dropdownMenuLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Language
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLanguage">
+            {{languageSwitch}}
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <div class="row">
       <div class="col-sm-12">
-
-        <h1>{{name}}</h1>
 
         <!-- Start Gamevy Embed code -->
         <div class="game-embed"
