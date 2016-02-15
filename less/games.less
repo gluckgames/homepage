@@ -14,14 +14,32 @@
       text-align: left;
     }
   }
-
   .intro {
-    text-align: left;
-    font-size: 2.5em;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    color: #fff;
-    text-align: center;
+    .ice-2016-banner {
+      position: relative;
+      top: -10px;
+      float: left;
+      margin-right: 40px;
+    }
+
+    h2 {
+      text-align: left;
+      font-size: 2.5em;
+      margin-top: 60px;
+      margin-bottom: 60px;
+      color: #fff;
+    }
+
+    @media(max-width: @grid-float-breakpoint) {
+      .ice-2016-banner {
+        sdisplay: none;
+        float: initial;
+      }
+
+      h2 {
+        text-align: center;
+      }
+    }
   }
 
   .game-logo {
