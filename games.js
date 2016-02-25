@@ -38,7 +38,8 @@ var GAMES = [
         "version": 1,
         "languages": {
             "en-GB": "Boss the Lotto",
-            "de-DE": "Lottoboss"
+            "de-DE": "Lottoboss",
+            "sv-SE": "Lotto Boss"
         }
     },
     {
