@@ -55,7 +55,9 @@ var GAMES = [
         "version": 1,
         "languages": {
             "en-GB": "Diamond Deal",
-            "pl-PL": "Diamentowe Łowy"
+            "pl-PL": "Diamentowe Łowy",
+            "de-DE": "Diamanten Deal",
+            "sv-SE": "Diamant Jakten"
         }
     }
 ];
