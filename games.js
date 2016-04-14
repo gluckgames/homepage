@@ -61,6 +61,14 @@ var GAMES = [
             "de-DE": "Diamanten Deal",
             "sv-SE": "Diamant Jakten"
         }
+    },
+    {
+        "path": "epic-gems",
+        "url": "https://1a73fbbb36ea95c9c527-a33977cdcf78ab75cf08faf9d320c8af.ssl.cf3.rackcdn.com",
+        "version": 1,
+        "languages": {
+            "en-GB": "Epic Gems"
+        }
     }
 ];
 
