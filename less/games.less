@@ -50,43 +50,51 @@
     }
   }
 
-  .game-logo {
-    width: 100%;
-    height: 150px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+  .col-game a {
+    margin-bottom: 10px;
+    position: relative;
+    display: block;
 
-  .col-game {
-    margin-bottom: 50px;
-  }
+    .game-logo {
+      width: 100%;
+      height: 170px;
+      margin: 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
 
-  .game-logo--the-heist {
-    background-image: ;
-  }
-  .game-logo--boss-the-lotto {
-    background-image: url("/img/game_boss_the_lotto.png");
-  }
-  .game-logo--gears-of-fortune {
-    background-image: url("/img/game_gears_of_fortune.png");
-  }
-  .game-logo--buzzword {
-    background-image: url("/img/game_buzzword.png");
-  }
-  .game-logo--diamomd {
-    background-image: url("/img/game_buzzword.png");
-  }
+    .hover-text {
+      position: absolute;
+      background: #ee004f;
+      border-radius: 3px;
+      padding: 5px;
+      top: 50%;
+      height: 20%;
+      margin-top: -10%;
+      left: 25%;
+      width: 50%;
+      text-align: center;
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.3s;
 
-  .btn-primary {
-    margin-top: 20px;
-  }
+      &.coming-soon {
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+      }
+    }
 
-  .btn-invisible {
-    visibility: hidden;
+    &:hover {
+      .hover-text {
+        opacity: 1;
+      }
 
-    @media (max-width: 768px) {
-      display: none;
+      .game-logo {
+        opacity: 0.5;
+      }
     }
   }
 
