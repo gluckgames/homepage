@@ -3,6 +3,7 @@ var GAMES = [
         "path": "the-heist",
         "url": "https://70234542b69db413cdd4-ec3382d217bd165415e45cc0dc163fa1.ssl.cf3.rackcdn.com",
         "version": 2,
+        "ratio": 4/3,
         "languages": {
             "en-GB": "The Heist",
             "de-DE": "Der Tresor",
@@ -15,6 +16,7 @@ var GAMES = [
         "path": "gears-of-fortune",
         "url": "https://cb0ae37100c1554702d9-f0d4393fe19cd1569847c666aa639f95.ssl.cf3.rackcdn.com",
         "version": 1,
+        "ratio": 4/3,
         "languages": {
             "en-GB": "Gears of Fortune",
             "de-DE": "Glückszahnrad",
@@ -26,6 +28,7 @@ var GAMES = [
         "path": "buzzword",
         "url": "https://38050b8429872a8d3654-52cd88461befb180e6ba6df9d51f2d49.ssl.cf3.rackcdn.com",
         "version": 1,
+        "ratio": 4/3,
         "languages": {
             "en-GB": "Buzzword Bingo",
             "de-DE": "Wortbingo",
@@ -36,6 +39,7 @@ var GAMES = [
         "path": "boss-the-lotto",
         "url": "https://942ee359b38c739ec703-e7b4a4a9cfc3068a977f0739a8065678.ssl.cf3.rackcdn.com",
         "version": 1,
+        "ratio": 4/3,
         "languages": {
             "en-GB": "Boss the Lotto",
             "de-DE": "Lottoboss",
@@ -47,6 +51,7 @@ var GAMES = [
         "path": "boss-the-ball",
         "url": "https://12139ec25694b8ee0c5a-9bef4630b3d43ea6b4b821b024198164.ssl.cf3.rackcdn.com",
         "version": 1,
+        "ratio": 4/3,
         "languages": {
             "en-GB": "Boss the Ball"
         }
@@ -55,6 +60,7 @@ var GAMES = [
         "path": "diamond-deal",
         "url": "https://74926736e21dc1cdb6de-44165718bd41782521e59ee38cd99a6d.ssl.cf3.rackcdn.com",
         "version": 1,
+        "ratio": 4/3,
         "languages": {
             "en-GB": "Diamond Deal",
             "pl-PL": "Diamentowe Łowy",
@@ -66,6 +72,7 @@ var GAMES = [
         "path": "epic-gems",
         "url": "https://1a73fbbb36ea95c9c527-a33977cdcf78ab75cf08faf9d320c8af.ssl.cf3.rackcdn.com",
         "version": 1,
+        "ratio": 16/9,
         "languages": {
             "en-GB": "Epic Gems"
         }
@@ -74,6 +81,7 @@ var GAMES = [
         "path": "spinlotto",
         "url": "https://fe8717991911ab4b0bc5-b8608dc7357077f21db1b28ba1fc342f.ssl.cf3.rackcdn.com",
         "version": 1,
+        "ratio": 16/9,
         "languages": {
             "en-GB": "Spinlotto"
         }
@@ -149,6 +157,7 @@ module.exports = function() {
                 .replace(new RegExp("{{name}}", "g"), name)
                 .replace(new RegExp("{{fullscreen}}", "g"), language.fullscreen)
                 .replace(new RegExp("{{version}}", "g"), game.version)
+                .replace(new RegExp("{{ratio}}", "g"), game.ratio)
                 .replace(new RegExp("{{languageSwitch}}", "g"), getLanguageSwitch(game.languages, languageCode, game.path))
 
                 // Remove navbar-fixed, it creates problems on small screens

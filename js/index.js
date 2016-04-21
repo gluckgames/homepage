@@ -49,3 +49,20 @@ if ($('.hero').length) {
     $(".navbar").toggleClass("js-navbar-top");
     $(".navbar.js-toggleClass").toggleClass("navbar-default navbar-inverse");
 }
+
+$(function() {
+    $(".game .game-iframe").each(function(i, element) {
+        element = $(element);
+        var ratio = element.data("ratio");
+        function resize() {
+            var height = Math.min(
+                element.width() / ratio,
+                document.documentElement.clientHeight,
+                630
+            );
+            element.css("height", height);
+        }
+        resize();
+        $(window).resize(resize);
+    });
+});
