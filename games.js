@@ -69,6 +69,14 @@ var GAMES = [
         "languages": {
             "en-GB": "Epic Gems"
         }
+    },
+    {
+        "path": "spinlotto",
+        "url": "https://fe8717991911ab4b0bc5-b8608dc7357077f21db1b28ba1fc342f.ssl.cf3.rackcdn.com",
+        "version": 1,
+        "languages": {
+            "en-GB": "Spinlotto"
+        }
     }
 ];
 
