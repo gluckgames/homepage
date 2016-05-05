@@ -76,6 +76,7 @@ var GAMES = [
         "ratio": 16/9,
         "languages": {
             "en-GB": "Epic Gems"
+            "de-DE": "Epic Gems"
         }
     },
     {
