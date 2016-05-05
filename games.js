@@ -53,7 +53,8 @@ var GAMES = [
         "version": 1,
         "ratio": 4/3,
         "languages": {
-            "en-GB": "Boss the Ball"
+            "en-GB": "Boss the Ball",
+            "de-DE": "Rote Karte"
         }
     },
     {
