@@ -14,7 +14,7 @@ var GAMES = [
     },
     {
         "path": "gears-of-fortune",
-        "url": "https://cb0ae37100c1554702d9-f0d4393fe19cd1569847c666aa639f95.ssl.cf3.rackcdn.com",
+        "url": "https://games.gamevy.com/prod/gears-of-fortune",
         "version": 1,
         "ratio": 4/3,
         "languages": {
@@ -26,7 +26,7 @@ var GAMES = [
     },
     {
         "path": "buzzword",
-        "url": "https://38050b8429872a8d3654-52cd88461befb180e6ba6df9d51f2d49.ssl.cf3.rackcdn.com",
+        "url": "https://games.gamevy.com/prod/buzzword",
         "version": 1,
         "ratio": 4/3,
         "languages": {
@@ -37,7 +37,7 @@ var GAMES = [
     },
     {
         "path": "boss-the-lotto",
-        "url": "https://942ee359b38c739ec703-e7b4a4a9cfc3068a977f0739a8065678.ssl.cf3.rackcdn.com",
+        "url": "https://games.gamevy.com/prod/boss-the-lotto",
         "version": 1,
         "ratio": 4/3,
         "languages": {
@@ -49,7 +49,7 @@ var GAMES = [
     },
     {
         "path": "boss-the-ball",
-        "url": "https://12139ec25694b8ee0c5a-9bef4630b3d43ea6b4b821b024198164.ssl.cf3.rackcdn.com",
+        "url": "https://games.gamevy.com/prod/boss-the-ball",
         "version": 1,
         "ratio": 4/3,
         "languages": {
@@ -58,7 +58,7 @@ var GAMES = [
     },
     {
         "path": "diamond-deal",
-        "url": "https://74926736e21dc1cdb6de-44165718bd41782521e59ee38cd99a6d.ssl.cf3.rackcdn.com",
+        "url": "https://games.gamevy.com/prod/diamond-deal",
         "version": 1,
         "ratio": 4/3,
         "languages": {
@@ -70,7 +70,7 @@ var GAMES = [
     },
     {
         "path": "epic-gems",
-        "url": "https://1a73fbbb36ea95c9c527-a33977cdcf78ab75cf08faf9d320c8af.ssl.cf3.rackcdn.com",
+        "url": "https://games.gamevy.com/prod/epic-gems",
         "version": 1,
         "ratio": 16/9,
         "languages": {
@@ -79,7 +79,7 @@ var GAMES = [
     },
     {
         "path": "spinlotto",
-        "url": "https://fe8717991911ab4b0bc5-b8608dc7357077f21db1b28ba1fc342f.ssl.cf3.rackcdn.com",
+        "url": "https://games.gamevy.com/prod/spinlotto",
         "version": 1,
         "ratio": 16/9,
         "languages": {
