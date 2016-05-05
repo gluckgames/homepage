@@ -1,7 +1,7 @@
 var GAMES = [
     {
         "path": "the-heist",
-        "url": "https://70234542b69db413cdd4-ec3382d217bd165415e45cc0dc163fa1.ssl.cf3.rackcdn.com",
+        "url": "https://games.gamevy.com/prod/the-heist",
         "version": 2,
         "ratio": 4/3,
         "languages": {
