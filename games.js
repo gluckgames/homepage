@@ -85,7 +85,9 @@ var GAMES = [
         "ratio": 16/9,
         "languages": {
             "en-GB": "Spinlotto",
-            "de-DE": "Spinlotto"
+            "de-DE": "Spinlotto",
+            "sv-SE": "Spinlotto",
+            "pl-PL": "Spinlotto"
         }
     }
 ];
