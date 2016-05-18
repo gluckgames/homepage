@@ -109,7 +109,7 @@ var LANGUAGES = {
     "pl-PL": {
         "prefix": "-pl-PL",
         "currency": "PLN",
-        "fullscreen": "na pełnym ekranie",
+        "fullscreen": "Pełny ekran",
         "name": "Polish"
     },
     "sv-SE": {
