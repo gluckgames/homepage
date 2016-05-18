@@ -76,6 +76,7 @@ var GAMES = [
         "languages": {
             "en-GB": "Epic Gems",
             "de-DE": "Epic Gems"
+            "pl-PL": "Epic Gems"
         }
     },
     {
