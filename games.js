@@ -76,7 +76,8 @@ var GAMES = [
         "languages": {
             "en-GB": "Epic Gems",
             "de-DE": "Epic Gems",
-            "pl-PL": "Epic Gems"
+            "pl-PL": "Bombowe Klejnoty",
+	    "sv-SE": "Ädelstenar"
         }
     },
     {
