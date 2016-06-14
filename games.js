@@ -9,7 +9,7 @@ var GAMES = [
             "de-DE": "Der Tresor",
             "pl-PL": "Włambank",
             "sv-SE": "Kuppen",
-            "ru-RU": "Грабитель"
+            "ru-RU": "ГрабеЖ"
         }
     },
     {
