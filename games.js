@@ -44,7 +44,8 @@ var GAMES = [
             "en-GB": "Boss the Lotto",
             "de-DE": "Lottoboss",
             "sv-SE": "Lotto Boss",
-            "pl-PL": "Lotto Lider"
+            "pl-PL": "Lotto Lider",
+            "ru-RU": "Босс лото"
         }
     },
     {
@@ -53,7 +54,8 @@ var GAMES = [
         "version": 1,
         "ratio": 4/3,
         "languages": {
-            "en-GB": "Boss the Ball"
+            "en-GB": "Boss the Ball",
+            "ru-RU": "Мастер мяча"
         }
     },
     {
@@ -77,7 +79,8 @@ var GAMES = [
             "en-GB": "Epic Gems",
             "de-DE": "Epic Gems",
             "pl-PL": "Bombowe Klejnoty",
-	    "sv-SE": "Ädelstenar"
+	    "sv-SE": "Ädelstenar",
+	    "ru-RU": "Найди алмаз"
         }
     },
     {
@@ -89,7 +92,8 @@ var GAMES = [
             "en-GB": "Spinlotto",
             "de-DE": "Spinlotto",
             "sv-SE": "Spinlotto",
-            "pl-PL": "Spinlotto"
+            "pl-PL": "Spinlotto",
+            "ru-RU": "Spinlotto"
         }
     }
 ];
