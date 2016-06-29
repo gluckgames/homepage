@@ -67,7 +67,8 @@ var GAMES = [
             "en-GB": "Diamond Deal",
             "pl-PL": "Diamentowe Łowy",
             "de-DE": "Diamanten Deal",
-            "sv-SE": "Diamant Jakten"
+            "sv-SE": "Diamant Jakten",
+            "ru-RU": "Найди алмаз"
         }
     },
     {
