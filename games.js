@@ -96,6 +96,16 @@ var GAMES = [
             "pl-PL": "Spinlotto",
             "ru-RU": "Spinlotto"
         }
+    },
+    {
+        "path": "spinlotto-scratch",
+        "url": "https://games.gamevy.com/prod/scratch",
+        "version": 1,
+        "ratio": 16/9,
+        "variation": "&gameId=SPINLOTTO_SCRATCH&spinlottoUrl=http%3A%2F%2Fgamevy.com%2Fspinlotto.html",
+        "languages": {
+            "en-GB": "Spinlotto Scratch"
+        }
     }
 ];
 
@@ -170,6 +180,7 @@ module.exports = function() {
                 .replace(new RegExp("{{version}}", "g"), game.version)
                 .replace(new RegExp("{{ratio}}", "g"), game.ratio)
                 .replace(new RegExp("{{languageSwitch}}", "g"), getLanguageSwitch(game.languages, languageCode, game.path))
+                .replace(new RegExp("{{variation}}", "g"), game.variation || "")
 
                 // Remove navbar-fixed, it creates problems on small screens
                 .replace("navbar-fixed-top js-navbar-top", "");
