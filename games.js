@@ -101,9 +101,19 @@ var GAMES = [
         "url": "https://games.gamevy.com/prod/scratch",
         "version": 1,
         "ratio": 16/9,
-        "variation": "&gameId=SPINLOTTO_SCRATCH&spinlottoUrl=http%3A%2F%2Fgamevy.com%2Fspinlotto.html",
+        "variation": "&gameId=SPINLOTTO_SCRATCH",
         "languages": {
             "en-GB": "Spinlotto Scratch"
+        }
+    },
+    {
+        "path": "the-link",
+        "url": "https://games.gamevy.com/prod/the-link",
+        "version": 1,
+        "ratio": 16/9,
+        "languages": {
+            "en-GB": "The Link",
+            "de-DE": "The Link"
         }
     }
 ];
