@@ -61,7 +61,7 @@ var GAMES = [
             "sv-SE": "Rött Kort",
             "pl-PL": "Czerwone Kartki",
             "ru-RU": "Мастер мяча",
-            "no-NO": "Boss the Ball",
+            "no-NO": "Boss the Ball"
         }
     },
     {
@@ -87,9 +87,9 @@ var GAMES = [
             "en-GB": "Epic Gems",
             "de-DE": "Epic Gems",
             "pl-PL": "Bombowe Klejnoty",
-            "no-NO": "Epic Gems"
-	    "sv-SE": "Ädelstenar",
-	    "ru-RU": "Найди алмаз"
+            "no-NO": "Epic Gems",
+            "sv-SE": "Ädelstenar",
+            "ru-RU": "Найди алмаз"
         }
     },
     {
