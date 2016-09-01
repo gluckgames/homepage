@@ -45,7 +45,9 @@ var GAMES = [
             "de-DE": "Lottoboss",
             "sv-SE": "Lotto Boss",
             "pl-PL": "Lotto Lider",
-            "ru-RU": "Босс лото"
+            "ru-RU": "Босс лото",
+            "no-NO": "Lotto Boss",
+            "zh-CN": "Lotto Boss"
         }
     },
     {
@@ -54,8 +56,12 @@ var GAMES = [
         "version": 1,
         "ratio": 4/3,
         "languages": {
-            "en-GB": "Boss the Ball",
-            "ru-RU": "Мастер мяча"
+            "en-GB": "Red Card",
+            "de-DE": "Rote Karte",
+            "sv-SE": "Rött Kort",
+            "pl-PL": "Czerwone Kartki",
+            "ru-RU": "Мастер мяча",
+            "no-NO": "Boss the Ball",
         }
     },
     {
@@ -65,10 +71,11 @@ var GAMES = [
         "ratio": 4/3,
         "languages": {
             "en-GB": "Diamond Deal",
-            "pl-PL": "Diamentowe Łowy",
             "de-DE": "Diamanten Deal",
             "sv-SE": "Diamant Jakten",
-            "ru-RU": "Найди алмаз"
+            "pl-PL": "Diamentowe Łowy",
+            "ru-RU": "Найди алмаз",
+            "no-NO": "Diamond Deal"
         }
     },
     {
@@ -80,6 +87,7 @@ var GAMES = [
             "en-GB": "Epic Gems",
             "de-DE": "Epic Gems",
             "pl-PL": "Bombowe Klejnoty",
+            "no-NO": "Epic Gems"
 	    "sv-SE": "Ädelstenar",
 	    "ru-RU": "Найди алмаз"
         }
@@ -161,6 +169,18 @@ var LANGUAGES = {
         "currency": "RUB",
         "fullscreen": "играть во весь экран",
         "name": "Russian"
+    },
+    "no-NO": {
+        "prefix": "-no-NO",
+        "currency": "NOK",
+        "fullscreen": "Play in full screen",
+        "name": "Norwegian"
+    },
+    "zh-CN": {
+        "prefix": "-zh-CN",
+        "currency": "CNY",
+        "fullscreen": "Play in full screen",
+        "name": "Chinese"
     }
 };
 
