@@ -112,7 +112,8 @@ var GAMES = [
         "ratio": 16/9,
         "variation": "&gameId=SPINLOTTO_SCRATCH",
         "languages": {
-            "en-GB": "Spinlotto Scratch"
+            "en-GB": "Spinlotto Scratch",
+            "de-DE": "Spinlotto Rubbellos"
         }
     },
     {
