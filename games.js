@@ -117,6 +117,17 @@ var GAMES = [
         }
     },
     {
+        "path": "the-link-scratch",
+        "url": "https://games.gamevy.com/prod/scratch",
+        "version": 1,
+        "ratio": 16/9,
+        "variation": "&gameId=THE_LINK_SCRATCH",
+        "languages": {
+            "en-GB": "The Link Scratch",
+            "de-DE": "The Link Rubbellos"
+        }
+    },
+    {
         "path": "the-link",
         "url": "https://games.gamevy.com/prod/the-link",
         "version": 1,
