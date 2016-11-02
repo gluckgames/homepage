@@ -89,7 +89,14 @@ var GAMES = [
             "pl-PL": "Bombowe Klejnoty",
             "no-NO": "Epic Gems",
             "sv-SE": "Ädelstenar",
-            "ru-RU": "Найди алмаз"
+            "ru-RU": "Найди алмаз",
+            "cs-CZ": "Epic Gems",
+            "fi-FI": "Epic Gems",
+            "hu-HU": "Epic Gems",
+            "zh-CN": "Epic Gems",
+            //"ja-JP": "エピックジェム",
+            "sk-SK": "Epic Gems",
+            "tr-TR": "Epic Gems"
         }
     },
     {
@@ -185,14 +192,44 @@ var LANGUAGES = {
     "no-NO": {
         "prefix": "-no-NO",
         "currency": "NOK",
-        "fullscreen": "Play in full screen",
+        "fullscreen": "Spille i full skjerm",
         "name": "Norwegian"
     },
     "zh-CN": {
         "prefix": "-zh-CN",
         "currency": "CNY",
-        "fullscreen": "Play in full screen",
+        "fullscreen": "全屏玩游戏",
         "name": "Chinese"
+    },
+    "fi-FI": {
+        "prefix": "-fi-FI",
+        "currency": "EUR",
+        "fullscreen": "Pelaa koko näytöllä",
+        "name": "Finnish"
+    },
+    "hu-HU": {
+        "prefix": "-hu-HU",
+        "currency": "HUF",
+        "fullscreen": "Play in full screen",
+        "name": "Hungarian"
+    },
+    "ja-JP": {
+        "prefix": "-ja-JP",
+        "currency": "JPY",
+        "fullscreen": "フルスクリーンでプレーする",
+        "name": "Japanese"
+    },
+    "sk-SK": {
+        "prefix": "-sk-SK",
+        "currency": "EUR",
+        "fullscreen": "Režim plnej obrazovky",
+        "name": "Slovak"
+    },
+    "tr-TR": {
+        "prefix": "-tr-TR",
+        "currency": "TRY",
+        "fullscreen": "Ekranı büyüt",
+        "name": "Turkish"
     }
 };
 
