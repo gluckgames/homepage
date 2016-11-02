@@ -21,7 +21,9 @@ var GAMES = [
             "en-GB": "Gears of Fortune",
             "de-DE": "Glückszahnrad",
             "pl-PL": "Maszyna Fortuny",
-            "ru-RU": "Знаки Фортуны"
+            "ru-RU": "Знаки Фортуны",
+            "cs-CZ": "Soukolí štěstí",
+            "sv-SE": "Lycko-Kugghjulet",
         }
     },
     {
@@ -47,7 +49,12 @@ var GAMES = [
             "pl-PL": "Lotto Lider",
             "ru-RU": "Босс лото",
             "no-NO": "Lotto Boss",
-            "zh-CN": "Lotto Boss"
+            "zh-CN": "Lotto Boss",
+            "cs-CZ": "Boss the Lotto",
+            "fi-FI": "Lotto Boss",
+            "hu-HU": "Boss the Lotto",
+            "sk-SK": "Boss the Lotto",
+            "tr-TR": "Boss the Lotto"
         }
     },
     {
@@ -61,7 +68,12 @@ var GAMES = [
             "sv-SE": "Rött Kort",
             "pl-PL": "Czerwone Kartki",
             "ru-RU": "Мастер мяча",
-            "no-NO": "Boss the Ball"
+            "no-NO": "Boss the Ball",
+            "cs-CZ": "Red Card",
+            "fi-FI": "Red Card",
+            "hu-HU": "Red Card",
+            "ru-RU": "Мастер мяча",
+            "tr-TR": "Red Card"
         }
     },
     {
@@ -75,7 +87,12 @@ var GAMES = [
             "sv-SE": "Diamant Jakten",
             "pl-PL": "Diamentowe Łowy",
             "ru-RU": "Найди алмаз",
-            "no-NO": "Diamond Deal"
+            "no-NO": "Diamond Deal",
+            "cs-CZ": "Diamond Deal",
+            "fi-FI": "Diamond Deal",
+            "hu-HU": "Diamond Deal",
+            "sk-SK": "Diamond Deal",
+            "tr-TR": "Diamond Deal"
         }
     },
     {
@@ -109,7 +126,13 @@ var GAMES = [
             "de-DE": "Spinlotto",
             "sv-SE": "Spinlotto",
             "pl-PL": "Spinlotto",
-            "ru-RU": "Spinlotto"
+            "ru-RU": "Spinlotto",
+            "cs-CZ": "Spinlotto",
+            "fi-FI": "Spinlotto",
+            "hu-HU": "Spinlotto",
+            "no-NO": "Spinlotto",
+            "sk-SK": "Spinlotto",
+            "tr-TR": "Spinlotto"
         }
     },
     {
@@ -141,7 +164,16 @@ var GAMES = [
         "ratio": 16/9,
         "languages": {
             "en-GB": "The Link",
-            "de-DE": "The Link"
+            "de-DE": "The Link",
+            "cs-CZ": "The Link",
+            "fi-FI": "The Link",
+            "hu-HU": "The Link",
+            "no-NO": "The Link",
+            "pl-PL": "The Link",
+            "ru-RU": "The Link",
+            "sk-SK": "The Link",
+            "sv-SE": "The Link",
+            "tr-TR": "The Link",
         }
     }
 ];
