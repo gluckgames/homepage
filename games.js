@@ -75,7 +75,8 @@ var GAMES = [
             "hu-HU": "Red Card",
             "ru-RU": "Мастер мяча",
             "tr-TR": "Red Card",
-            "sk-SK": "Red Card"
+            "sk-SK": "Red Card",
+            "ja-JP": "Red Card"
         }
     },
     {
