@@ -54,7 +54,8 @@ var GAMES = [
             "fi-FI": "Lotto Boss",
             "hu-HU": "Boss the Lotto",
             "sk-SK": "Boss the Lotto",
-            "tr-TR": "Boss the Lotto"
+            "tr-TR": "Boss the Lotto",
+            "ja-JP": "Boss the Lotto"
         }
     },
     {
@@ -73,7 +74,8 @@ var GAMES = [
             "fi-FI": "Red Card",
             "hu-HU": "Red Card",
             "ru-RU": "Мастер мяча",
-            "tr-TR": "Red Card"
+            "tr-TR": "Red Card",
+            "sk-SK": "Red Card"
         }
     },
     {
@@ -92,7 +94,8 @@ var GAMES = [
             "fi-FI": "Diamond Deal",
             "hu-HU": "Diamond Deal",
             "sk-SK": "Diamond Deal",
-            "tr-TR": "Diamond Deal"
+            "tr-TR": "Diamond Deal",
+            "ja-JP": "Diamond Deal"
         }
     },
     {
@@ -111,7 +114,7 @@ var GAMES = [
             "fi-FI": "Epic Gems",
             "hu-HU": "Epic Gems",
             "zh-CN": "Epic Gems",
-            //"ja-JP": "エピックジェム",
+            "ja-JP": "エピックジェム",
             "sk-SK": "Epic Gems",
             "tr-TR": "Epic Gems"
         }
@@ -132,7 +135,8 @@ var GAMES = [
             "hu-HU": "Spinlotto",
             "no-NO": "Spinlotto",
             "sk-SK": "Spinlotto",
-            "tr-TR": "Spinlotto"
+            "tr-TR": "Spinlotto",
+            "ja-JP": "Spinlotto"
         }
     },
     {
@@ -174,6 +178,7 @@ var GAMES = [
             "sk-SK": "The Link",
             "sv-SE": "The Link",
             "tr-TR": "The Link",
+            "ja-JP": "The Link"
         }
     }
 ];
