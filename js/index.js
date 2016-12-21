@@ -55,12 +55,16 @@ $(function() {
         element = $(element);
         var ratio = element.data("ratio");
         function resize() {
-            var height = Math.min(
-                element.width() / ratio,
-                document.documentElement.clientHeight,
-                630
-            );
-            element.css("height", height);
+            if (ratio > 1) {
+                var height = Math.min(
+                    element.width() / ratio,
+                    document.documentElement.clientHeight,
+                    630
+                );
+                element.css("height", height);
+            } else {
+                element.css("height", 630).css("width", 630 * ratio);
+            }
         }
         resize();
         $(window).resize(resize);

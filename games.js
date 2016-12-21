@@ -181,6 +181,66 @@ var GAMES = [
             "tr-TR": "The Link",
             "ja-JP": "The Link"
         }
+    },
+    {
+        "path": "casino-scratch",
+        "url": "https://games.gamevy.com/prod/scratch",
+        "variation": "&gameId=BETSSON_CARDS&brand=betsson",
+        "version": 1,
+        "ratio": 9/16,
+        "languages": {
+            "en-GB": "Casino Scratch",
+            "de-DE": "Casino Scratch",
+            "fi-FI": "Casino Scratch",
+            "no-NO": "Casino Scratch",
+            "sv-SE": "Casino Scratch",
+            "tr-TR": "Casino Scratch",
+        }
+    },
+    {
+        "path": "magic-scratch",
+        "url": "https://games.gamevy.com/prod/scratch",
+        "variation": "&gameId=BETSSON_MAGIC&brand=betsson",
+        "version": 1,
+        "ratio": 9/16,
+        "languages": {
+            "en-GB": "Magic Scratch",
+            "de-DE": "Magic Scratch",
+            "fi-FI": "Magic Scratch",
+            "no-NO": "Magic Scratch",
+            "sv-SE": "Magic Scratch",
+            "tr-TR": "Magic Scratch",
+        }
+    },
+    {
+        "path": "treasure-scratch",
+        "url": "https://games.gamevy.com/prod/scratch",
+        "variation": "&gameId=BETSSON_TREASURE&brand=betsson",
+        "version": 1,
+        "ratio": 9/16,
+        "languages": {
+            "en-GB": "Treasure Scratch",
+            "de-DE": "Treasure Scratch",
+            "fi-FI": "Treasure Scratch",
+            "no-NO": "Treasure Scratch",
+            "sv-SE": "Treasure Scratch",
+            "tr-TR": "Treasure Scratch",
+        }
+    },
+    {
+        "path": "diamond-scratch",
+        "url": "https://games.gamevy.com/prod/scratch",
+        "variation": "&gameId=BETSSON_DIAMOND&brand=betsson",
+        "version": 1,
+        "ratio": 9/16,
+        "languages": {
+            "en-GB": "Diamond Scratch",
+            "de-DE": "Diamond Scratch",
+            "fi-FI": "Diamond Scratch",
+            "no-NO": "Diamond Scratch",
+            "sv-SE": "Diamond Scratch",
+            "tr-TR": "Diamond Scratch",
+        }
     }
 ];
 

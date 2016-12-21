@@ -110,6 +110,8 @@ gulp.task("favicon", function () {
 });
 
 gulp.task("games", function() {
+    // Hack: Avoid require-cache
+    delete require.cache[require.resolve("./games.js")];
     require("./games.js")();
 });
 
