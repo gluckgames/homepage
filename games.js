@@ -27,17 +27,6 @@ var GAMES = [
         }
     },
     {
-        "path": "buzzword",
-        "url": "https://games.gamevy.com/prod/buzzword",
-        "version": 1,
-        "ratio": 4/3,
-        "languages": {
-            "en-GB": "Buzzword Bingo",
-            "de-DE": "Wortbingo",
-            "pl-PL": "Gra słów"
-        }
-    },
-    {
         "path": "boss-the-lotto",
         "url": "https://games.gamevy.com/prod/boss-the-lotto",
         "version": 1,
@@ -240,6 +229,30 @@ var GAMES = [
             "no-NO": "Diamond Scratch",
             "sv-SE": "Diamond Scratch",
             "tr-TR": "Diamond Scratch",
+        }
+    },
+    {
+        "path": "roulette-eu",
+        "url": "https://games.gamevy.com/prod/roulette-eu",
+        "version": 1,
+        "ratio": 16/9,
+        "languages": {
+            "en-GB": "Roulette",
+            "de-DE": "Roulette",
+            "sv-SE": "Roulette"
+        }
+    },
+    {
+        "path": "be-the-king",
+        "url": "https://games.gamevy.com/prod/be-the-king",
+        "version": 1,
+        "ratio": 16/9,
+        "languages": {
+            "en-GB": "Be the King",
+            "de-DE": "Be the King",
+            "fi-FI": "Be the King",
+            "no-NO": "Be the King",
+            "sv-SE": "Be the King"
         }
     }
 ];
