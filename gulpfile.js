@@ -34,7 +34,7 @@ function bundleMainBrowserify(b) {
         .on("error", function(err){
             console.log(err.message);
         })
-        .pipe(source("main.js"))
+        .pipe(source("index.js"))
         .pipe(gulp.dest("./dist/"));
 }
 
@@ -64,7 +64,7 @@ gulp.task("js:watch", function() {
 });
 
 gulp.task("less", function() {
-    return gulp.src("./less/main.less")
+    return gulp.src(["./less/main.less", "./less/kiosk.less"])
     .pipe(sourcemaps.init())
     .pipe(less({
         paths: [
