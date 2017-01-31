@@ -27,6 +27,17 @@ var GAMES = [
         }
     },
     {
+        "path": "buzzword",
+        "url": "https://games.gamevy.com/prod/buzzword",
+        "version": 1,
+        "ratio": 4/3,
+        "languages": {
+            "en-GB": "Buzzword Bingo",
+            "de-DE": "Wortbingo",
+            "pl-PL": "Gra słów"
+        }
+    },
+    {
         "path": "boss-the-lotto",
         "url": "https://games.gamevy.com/prod/boss-the-lotto",
         "version": 1,
