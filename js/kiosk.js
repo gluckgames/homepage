@@ -5,6 +5,7 @@ const GAMES = [
     { image: "the_heist", gameId: "the-heist" },
     { image: "spinlotto", gameId: "spinlotto" },
     { image: "the_link", gameId: "the-link" },
+    { image: "epic_gems", gameId: "epic-gems" },
     { image: "buzzword", gameId: "buzzword" },
     { image: "roulette", gameId: "roulette-eu" },
     { image: "gears_of_fortune", gameId: "gears-of-fortune" },
