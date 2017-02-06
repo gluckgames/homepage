@@ -1,4 +1,5 @@
 import $ from "jquery"
+import getQueryParameters from "./getQueryParameters";
 
 const GAMES = [
     { image: "be_the_king", gameId: "be-the-king" },
@@ -27,7 +28,16 @@ global.kiosk = function kiosk() {
 }
 
 function initGames() {
-    GAMES.forEach(game => {
+    let query = getQueryParameters();
+
+    let games = GAMES;
+
+    if (query.exclude) {
+        let exclude = query.exclude.split(",");
+        games = games.filter(game => exclude.indexOf(game.gameId) === -1);
+    }
+
+    games.forEach(game => {
         let button = $(`<li></li>`);
         button.css("background-image", `url(./img/game_${game.image}.jpg)`);
         $(".games ul").append(button);
