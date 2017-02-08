@@ -7,7 +7,6 @@ const GAMES = [
     { image: "spinlotto", gameId: "spinlotto" },
     { image: "the_link", gameId: "the-link" },
     { image: "epic_gems", gameId: "epic-gems" },
-    { image: "buzzword", gameId: "buzzword" },
     { image: "roulette", gameId: "roulette-eu" },
     { image: "gears_of_fortune", gameId: "gears-of-fortune" },
     { image: "diamond_deal", gameId: "diamond-deal" },
@@ -47,7 +46,7 @@ function initGames() {
         });
     });
 
-    $(".games ul").css("width", GAMES.length * 150);
+    $(".games ul").css("width", games.length * 150);
 }
 
 function goFullscreen() {
