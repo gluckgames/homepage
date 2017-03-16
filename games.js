@@ -185,7 +185,7 @@ var GAMES = [
     {
         "path": "casino-scratch",
         "url": "https://games.gamevy.com/prod/scratch",
-        "variation": "&gameId=BETSSON_CARDS&brand=betsson",
+        "variation": "&gameId=BETSSON_CARDS",
         "version": 1,
         "ratio": 9/16,
         "languages": {
@@ -200,7 +200,7 @@ var GAMES = [
     {
         "path": "magic-scratch",
         "url": "https://games.gamevy.com/prod/scratch",
-        "variation": "&gameId=BETSSON_MAGIC&brand=betsson",
+        "variation": "&gameId=BETSSON_MAGIC",
         "version": 1,
         "ratio": 9/16,
         "languages": {
@@ -215,7 +215,7 @@ var GAMES = [
     {
         "path": "treasure-scratch",
         "url": "https://games.gamevy.com/prod/scratch",
-        "variation": "&gameId=BETSSON_TREASURE&brand=betsson",
+        "variation": "&gameId=BETSSON_TREASURE",
         "version": 1,
         "ratio": 9/16,
         "languages": {
@@ -230,7 +230,7 @@ var GAMES = [
     {
         "path": "diamond-scratch",
         "url": "https://games.gamevy.com/prod/scratch",
-        "variation": "&gameId=BETSSON_DIAMOND&brand=betsson",
+        "variation": "&gameId=BETSSON_DIAMOND",
         "version": 1,
         "ratio": 9/16,
         "languages": {
