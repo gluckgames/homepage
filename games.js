@@ -265,6 +265,39 @@ var GAMES = [
             "no-NO": "Be the King",
             "sv-SE": "Be the King"
         }
+    },
+    {
+        "path": "gold-cup",
+        "url": "https://games.gamevy.com/prod/scratch-sport",
+        "variation": "&gameId=GOLD_CUP",
+        "version": 1,
+        "ratio": 9/16,
+        "languages": {
+            "en-GB": "Gold Cup",
+            "de-DE": "Gold Cup",
+            "pl-PL": "Gold Cup",
+            "no-NO": "Gold Cup",
+            "sv-SE": "Gold Cup",
+            "ru-RU": "Gold Cup"
+        }
+    },
+    {
+        "path": "football",
+        "url": "https://games.gamevy.com/prod/scratch-sport",
+        "variation": "&gameId=FOOTBALL",
+        "version": 1,
+        "ratio": 9/16,
+        "languages": {
+            "en-GB": "Football",
+            "de-DE": "Football",
+            "it-IT": "Football",
+            "ru-RU": "Football",
+            "fi-FI": "Football",
+            "no-NO": "Football",
+            "sv-SE": "Football",
+            "tr-TR": "Football",
+            "pl-PL": "Football"
+        }
     }
 ];
 
@@ -352,6 +385,12 @@ var LANGUAGES = {
         "currency": "TRY",
         "fullscreen": "Ekranı büyüt",
         "name": "Turkish"
+    },
+    "it-IT": {
+        "prefix": "-it-IT",
+        "currency": "EUR",
+        "fullscreen": "A schermo intero",
+        "name": "Italian"
     }
 };
 
