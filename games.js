@@ -179,7 +179,8 @@ var GAMES = [
             "sk-SK": "The Link",
             "sv-SE": "The Link",
             "tr-TR": "The Link",
-            "ja-JP": "The Link"
+            "ja-JP": "The Link",
+            "it-IT": "The Link"
         }
     },
     {
