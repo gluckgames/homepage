@@ -299,6 +299,24 @@ var GAMES = [
             "tr-TR": "Football",
             "pl-PL": "Football"
         }
+    },
+    {
+        "path": "tennis",
+        "url": "https://games.gamevy.com/prod/scratch-sport",
+        "variation": "&gameId=TENNIS_SCRATCH",
+        "version": 1,
+        "ratio": 9/16,
+        "languages": {
+            "en-GB": "Tennis",
+            "de-DE": "Tennis",
+            "it-IT": "Tennis",
+            "ru-RU": "Tennis",
+            "fi-FI": "Tennis",
+            "no-NO": "Tennis",
+            "sv-SE": "Tennis",
+            "tr-TR": "Tennis",
+            "pl-PL": "Tennis"
+        }
     }
 ];
 
