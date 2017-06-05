@@ -19,7 +19,7 @@ const GAMES = [
     { image: "treasure_scratch", gameId: "scratch", variation: "&gameId=BETSSON_TREASURE&brand=betsson" },
     { image: "diamond_scratch", gameId: "scratch", variation: "&gameId=BETSSON_DIAMOND&brand=betsson" },
     { image: "7_11_21", gameId: "7-11-21" },
-    { image: "tennis", gameId: "scratch", variation: "&gameId=TENNIS" },
+    { image: "tennis", gameId: "scratch", variation: "&gameId=TENNIS_SCRATCH" },
     { image: "football", gameId: "scratch", variation: "&gameId=FOOTBALL" },
     { image: "gold_cup", gameId: "scratch", variation: "&gameId=GOLD_CUP" },
 ];
