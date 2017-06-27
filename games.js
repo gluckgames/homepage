@@ -317,6 +317,17 @@ var GAMES = [
             "tr-TR": "Tennis",
             "pl-PL": "Tennis"
         }
+    },
+    {
+        "path": "7up",
+        "url": "https://games.gamevy.com/prod/7up-scratch",
+        "version": 1,
+        "ratio": 16/9,
+        "languages": {
+            "en-GB": "7-Up",
+            "de-DE": "7-Up",
+            "cs-CZ": "7-Up"
+        }
     }
 ];
 
