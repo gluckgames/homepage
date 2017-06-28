@@ -328,6 +328,16 @@ var GAMES = [
             "de-DE": "7-Up",
             "cs-CZ": "7-Up"
         }
+    },
+    {
+        "path": "7-11-21",
+        "url": "https://games.gamevy.com/prod/7-11-21",
+        "version": 1,
+        "ratio": 16/9,
+        "languages": {
+            "en-GB": "7-11-21",
+            "de-DE": "7-11-21"
+        }
     }
 ];
 
