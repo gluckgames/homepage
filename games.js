@@ -324,9 +324,15 @@ var GAMES = [
         "version": 1,
         "ratio": 16/9,
         "languages": {
-            "en-GB": "7-Up",
-            "de-DE": "7-Up",
-            "cs-CZ": "7-Up"
+            "en-GB": "7UP!",
+            "de-DE": "7UP!",
+            "cs-CZ": "7UP!",
+            "hu-HU": "7UP!",
+            "no-NO": "7UP!",
+            "pl-PL": "7UP!",
+            "sv-SE": "7UP!",
+            "tr-TR": "7UP!",
+            "zh-CN": "7UP!"
         }
     },
     {
