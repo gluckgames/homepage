@@ -341,8 +341,47 @@ var GAMES = [
         "version": 1,
         "ratio": 16/9,
         "languages": {
-            "en-GB": "7-11-21",
-            "de-DE": "7-11-21"
+            "en-GB": "7 11 21"
+        }
+    },
+    {
+        "path": "us-mega-millions-scratch",
+        "url": "https://games.gamevy.com/prod/mega-millions-scratch",
+        "version": 1,
+        "ratio": 9/16,
+        "languages": {
+            "en-GB": "US Mega Millions Scratch",
+            "de-DE": "US Mega Millions Scratch"
+        }
+    },
+    {
+        "path": "us-powerball-scratch",
+        "url": "https://games.gamevy.com/prod/powerball-scratch",
+        "version": 1,
+        "ratio": 9/16,
+        "languages": {
+            "en-GB": "US Powerball Scratch",
+            "de-DE": "US Powerball Scratch"
+        }
+    },
+    {
+        "path": "6-49-scratch",
+        "url": "https://games.gamevy.com/prod/german-lotto-scratch",
+        "version": 1,
+        "ratio": 9/16,
+        "languages": {
+            "en-GB": "6/49 Scratch",
+            "de-DE": "6/49 Scratch"
+        }
+    },
+    {
+        "path": "blackjack",
+        "url": "https://games.gamevy.com/prod/blackjack",
+        "version": 1,
+        "ratio": 16/9,
+        "languages": {
+            "en-GB": "Blackjack",
+            "de-DE": "Blackjack"
         }
     }
 ];
