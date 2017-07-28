@@ -349,6 +349,7 @@ var GAMES = [
         "url": "https://games.gamevy.com/prod/mega-millions-scratch",
         "version": 1,
         "ratio": 9/16,
+        "platform": "ll-scratch",
         "languages": {
             "en-GB": "US Mega Millions Scratch",
             "de-DE": "US Mega Millions Scratch"
@@ -359,6 +360,7 @@ var GAMES = [
         "url": "https://games.gamevy.com/prod/powerball-scratch",
         "version": 1,
         "ratio": 9/16,
+        "platform": "ll-scratch",
         "languages": {
             "en-GB": "US Powerball Scratch",
             "de-DE": "US Powerball Scratch"
@@ -369,6 +371,7 @@ var GAMES = [
         "url": "https://games.gamevy.com/prod/german-lotto-scratch",
         "version": 1,
         "ratio": 9/16,
+        "platform": "ll-scratch",
         "languages": {
             "en-GB": "6/49 Scratch",
             "de-DE": "6/49 Scratch"
@@ -503,6 +506,7 @@ module.exports = function() {
                 .replace(new RegExp("{{name}}", "g"), name)
                 .replace(new RegExp("{{fullscreen}}", "g"), language.fullscreen)
                 .replace(new RegExp("{{version}}", "g"), game.version)
+                .replace(new RegExp("{{platform}}", "g"), game.platform || "gamevy")
                 .replace(new RegExp("{{ratio}}", "g"), game.ratio)
                 .replace(new RegExp("{{languageSwitch}}", "g"), getLanguageSwitch(game.languages, languageCode, game.path))
                 .replace(new RegExp("{{variation}}", "g"), game.variation || "")
