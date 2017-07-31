@@ -378,6 +378,17 @@ var GAMES = [
         }
     },
     {
+        "path": "euro-millions-scratch",
+        "url": "https://games.gamevy.com/prod/euro-millions-scratch",
+        "version": 1,
+        "ratio": 9/16,
+        "platform": "ll-scratch",
+        "languages": {
+            "en-GB": "Euromillions Scratch",
+            "de-DE": "Euromillions Scratch"
+        }
+    },
+    {
         "path": "blackjack",
         "url": "https://games.gamevy.com/prod/blackjack",
         "version": 1,
