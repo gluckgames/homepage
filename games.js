@@ -397,6 +397,15 @@ var GAMES = [
             "en-GB": "Blackjack",
             "de-DE": "Blackjack"
         }
+    },
+    {
+        "path": "abrakadabra",
+        "url": "https://games.gamevy.com/prod/abrakadabra",
+        "version": 1,
+        "ratio": 9/16,
+        "languages": {
+            "no-NO": "Abrakadabra"
+        }
     }
 ];
 
