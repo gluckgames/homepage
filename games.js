@@ -96,6 +96,7 @@ var GAMES = [
             "hu-HU": "Diamond Deal",
             "sk-SK": "Diamond Deal",
             "tr-TR": "Diamond Deal",
+            "it-IT": "Diamond Deal",
             "ja-JP": "Diamond Deal"
         }
     },
