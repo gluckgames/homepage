@@ -407,6 +407,15 @@ var GAMES = [
         "languages": {
             "no-NO": "Abrakadabra"
         }
+    },
+    {
+        "path": "blackjack-scratch",
+        "url": "https://games.gamevy.com/prod/blackjack-scratch",
+        "version": 1,
+        "ratio": 9/16,
+        "languages": {
+            "no-NO": "Blackjack Scratch"
+        }
     }
 ];
 
