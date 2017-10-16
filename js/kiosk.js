@@ -3,6 +3,7 @@ import getQueryParameters from "./getQueryParameters";
 
 const GAMES = [
     { image: "be_the_king", gameId: "be-the-king" },
+    { image: "nerves_of_steal", gameId: "nerves-of-steal" },
     { image: "the_heist", gameId: "the-heist" },
     { image: "spinlotto", gameId: "spinlotto" },
     { image: "the_link", gameId: "the-link" },

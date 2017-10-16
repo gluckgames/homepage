@@ -416,6 +416,19 @@ var GAMES = [
         "languages": {
             "no-NO": "Blackjack Scratch"
         }
+    },
+    {
+        "path": "nerves-of-steal",
+        "url": "https://games.gamevy.com/prod/nerves-of-steal",
+        "version": 1,
+        "ratio": 16/9,
+        "languages": {
+            "en-GB": "Nerves of Steal",
+            "de-DE": "Nerves of Steal",
+            "fi-FI": "Nerves of Steal",
+            "no-NO": "Nerves of Steal",
+            "sv-SE": "Nerves of Steal"
+        }
     }
 ];
 
