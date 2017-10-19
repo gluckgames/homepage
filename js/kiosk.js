@@ -6,6 +6,7 @@ const GAMES = [
     { image: "nerves_of_steal", gameId: "nerves-of-steal" },
     { image: "the_heist", gameId: "the-heist" },
     { image: "spinlotto", gameId: "spinlotto" },
+    { image: "jingle_up", gameId: "jingle-up" },
     { image: "the_link", gameId: "the-link" },
     { image: "epic_gems", gameId: "epic-gems" },
     { image: "roulette", gameId: "roulette-eu" },
