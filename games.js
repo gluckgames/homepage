@@ -429,6 +429,15 @@ var GAMES = [
             "no-NO": "Nerves of Steal",
             "sv-SE": "Nerves of Steal"
         }
+    },
+    {
+        "path": "jingle-up",
+        "url": "https://games.gamevy.com/prod/jingle-up",
+        "version": 1,
+        "ratio": 16/9,
+        "languages": {
+            "en-GB": "Jingle Up!"
+        }
     }
 ];
 
