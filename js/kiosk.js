@@ -4,7 +4,6 @@ import getQueryParameters from "./getQueryParameters";
 const GAMES = [
     { image: "be_the_king", gameId: "be-the-king" },
     { image: "nerves_of_steal", gameId: "nerves-of-steal" },
-    { image: "the_heist", gameId: "the-heist" },
     { image: "spinlotto", gameId: "spinlotto" },
     { image: "jingle_up", gameId: "jingle-up" },
     { image: "the_link", gameId: "the-link" },
@@ -24,6 +23,14 @@ const GAMES = [
     { image: "tennis", gameId: "scratch-sport", variation: "&gameId=TENNIS_SCRATCH" },
     { image: "football", gameId: "scratch-sport", variation: "&gameId=FOOTBALL" },
     { image: "gold_cup", gameId: "scratch-sport", variation: "&gameId=GOLD_CUP" },
+    { image: "7up", gameId: "7up-scratch" },
+    { image: "blackjack", gameId: "blackjack" },
+    { image: "blackjack_scratch", gameId: "blackjack-scratch", variation: "&currency=NOK&lang=no-NO" },
+    { image: "abrakadabra", gameId: "abrakadabra", variation: "&currency=NOK&lang=no-NO" },
+    { image: "kenoland", gameId: "keno", variation: "&token=70d43ef9-9a88-4e9e-b1d1-b3e770045290&mode=real" },
+    { image: "kenoland", gameId: "keno-desktop", variation: "&token=12d6e990-a7dc-4a00-b581-bca643bc5140&mode=real" },
+    { image: "melon_madness", gameId: "melon-madness" },
+    { image: "score_legend", gameId: "score-legend", variation: "&token=6a6f5d81-d8a3-4ba6-90d2-1b406c4f70e0&mode=real", url: "https://games.gamevy.com/d/a68f32577026673d10797ae4d42a3c8bdc52ef43/index.html?env=test&platform=gamevy" }
 ];
 
 global.kiosk = function kiosk() {
@@ -47,7 +54,11 @@ function initGames() {
         button.css("background-image", `url(./img/game_${game.image}.jpg)`);
         $(".games ul").append(button);
         button.click(() => {
-            $("iframe").attr("src", `https://games.gamevy.com/prod/${game.gameId}/index.html?env=test&platform=gamevy&resolutionType=web_retina${game.variation || ""}`);
+            if(game.url) {
+              $("iframe").attr("src", `${game.url}${game.variation}`)
+            } else {
+              $("iframe").attr("src", `https://games.gamevy.com/prod/${game.gameId}/index.html?env=test&platform=gamevy&resolutionType=web_retina${game.variation || ""}`);
+            }
             goFullscreen();
         });
     });
