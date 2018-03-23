@@ -438,6 +438,15 @@ var GAMES = [
         "languages": {
             "en-GB": "Jingle Up!"
         }
+    },
+    {
+        "path": "melon-madness",
+        "url": "https://games.gamevy.com/prod/melon-madness",
+        "version": 1,
+        "ratio": 16/9,
+        "languages": {
+            "en-GB": "Melon Madness"
+        }
     }
 ];
 
