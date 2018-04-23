@@ -115,8 +115,8 @@ gulp.task("games", function() {
     require("./games.js")();
 });
 
-gulp.task("clean", function (cb) {
-  del([ "dist/**/*" ], cb);
+gulp.task("clean", function () {
+  return del([ "dist/**/*" ]);
 });
 
 gulp.task("watch", ["build", "js:watch"], function () {
