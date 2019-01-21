@@ -133,7 +133,7 @@ gulp.task("deploy", function () {
     fs.writeFileSync("./dist/CNAME", "gamevy.com");
     return gulp.src("./dist/**/*")
     .pipe(githubPages({
-        remoteUrl: "git@github.com:Gamevy/gamevy.github.io.git",
+        remoteUrl: "git@github.com:gluckgames/gamevy.github.io.git",
         branch: "master"
     }));
 });
