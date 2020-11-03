@@ -321,7 +321,8 @@ var GAMES = [
     },
     {
         "path": "7up",
-        "url": "https://games.gamevy.com/prod/7up-scratch",
+        "url": "https://games.gamevy.com/prod/instant-slots",
+        "variation": "&gameId=7UP",
         "version": 1,
         "ratio": 16/9,
         "languages": {
